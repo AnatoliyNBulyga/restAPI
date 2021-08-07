@@ -14,6 +14,8 @@ app.get('/api/contacts', (req, res) => {
     res.status(200).json(CONTACTS);
 });
 
+// some test chenges
+
 // POST
 app.post('/api/contacts', (req, res) => {
   const contact = {...req.body, id: v4(), marked: false};
